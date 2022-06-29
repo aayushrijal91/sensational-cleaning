@@ -1,0 +1,87 @@
+@function imgUrl($file, $path: "background") {
+    @return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    background: imgUrl("header.jpg") center top;
+
+    .header-top-bar {
+        padding: 16px 48px;
+
+        .btn {
+            height: 56px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+    }
+
+    .banner {
+        padding-top: 118px;
+
+        .carpet-hire-claim-card {
+            display: inline-block;
+            background-color: $black;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 2.42075px;
+            padding: 23px 21px;
+        }
+
+        .banner-book-btn {
+            border-radius: 2.59172px;
+            font-weight: 600;
+            font-size: 1.3rem; // 20.8px
+            height: 72px;
+            display: flex;
+            align-items: center;
+            padding: 16px 52px;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .banner-review {
+            padding: 125px 0 78px;
+
+            .facebook-review-card {
+                background: $facebook;
+                border-radius: 2.27397px;
+                overflow: hidden;
+            }
+    
+            .google-review-card {
+                background: $secondary;
+                border-radius: 2.27397px;
+                overflow: hidden;
+            }
+        }
+
+        .cta {
+            .cta-card {
+                .content-wrapper {
+                    color: $white;
+                    padding: 72.14px 31px 35px;
+                    font-family: $font-raleway;
+                    position: relative;
+
+                    .content {
+                        min-height: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+
+                    .icon {
+                        position: absolute;
+                        top: -38.5px;
+
+                    }
+                }
+            }
+        }
+    }
+}

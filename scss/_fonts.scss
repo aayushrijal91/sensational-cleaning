@@ -1,0 +1,240 @@
+/* Font sizes */
+h1,
+.h1 {
+    font-size: 6.73rem; // 107.68px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 5.625rem; // 90px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 4.290625rem; // 68.65px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 4.1325rem; // 66.12px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 2.12rem; // 33.92px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 1.794375rem; // 28.71px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h7,
+.h7 {
+    font-size: 1.6875rem; // 27px
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h8 {
+    font-size: 1.5rem; // 24px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h9 {
+    font-size: 1.34rem; // 21.44px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h10 {
+    font-size: 1.3125rem; // 21px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h11 {
+    font-size: 1.3rem; // 20.8px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h12 {
+    font-size: 1.28125rem; // 20.5px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h13 {
+    font-size: 1.25rem; // 20px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h14 {
+    font-size: 1.125rem; // 18px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h15 {
+    font-size: 1.09375rem; // 17.5px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h16 {
+    font-size: 1.0625rem; // 17px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h17 {
+    font-size: 1.018125rem; // 16.29px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h18 {
+    font-size: 1rem; // 16px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h19 {
+    font-size: 0.9375rem; // 15px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h20 {
+    font-size: 0.875rem; // 14px
+}
+
+.h21 {
+    font-size: 0.838125rem; // 13.41px
+}
+
+.h22 {
+    font-size: 0.515625rem; // 8.25px
+}
+
+.h23 {
+    font-size: 0.9375rem; // 15px
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-articulat: "Articulat", sans-serif;
+$font-raleway: "Raleway", sans-serif;
+
+$font-body: $font-articulat;
+
+$font-families: (
+    "articulat": "Articulat",
+    "raleway": "Raleway",
+);
+
+@each $name, $font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2"),
+            url($asset-path + $font-file + ".eot") format("embedded-opentype"),
+            url($asset-path + $font-file + ".ttf") format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Articulat", "ArticulatCF-Regular", 400);
+@include font-face("Articulat", "ArticulatCF-Medium", 600);
+@include font-face("Articulat", "ArticulatCF-DemiBold", 700);
+@include font-face("Articulat", "ArticulatCF-Bold", 800);
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}

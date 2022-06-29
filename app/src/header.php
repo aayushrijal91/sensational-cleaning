@@ -11,7 +11,7 @@
 
 	<!-- Recaptcha Here -->
 	<script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
-	<script>
+	<!-- <script>
 		grecaptcha.ready(function() {
 			grecaptcha.execute('<?= $recaptcha_client_secret ?>', {
 				action: 'contact'
@@ -19,7 +19,7 @@
 				document.getElementById('recaptchaResponse').value = token;
 			});
 		});
-	</script>
+	</script> -->
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 					<div class="col-auto">
 						<div class="row no-gutters align-items-center">
 							<div class="col-auto pr-5">
-								<a href="./">
+								<a href="./" class="btn p-0">
 									<?= renderImg("logo.png", "logo") ?> <span class="text-dark h9 font-raleway fw-700 pl-3">Sensational Water Damage Specialists</span>
 								</a>
 							</div>

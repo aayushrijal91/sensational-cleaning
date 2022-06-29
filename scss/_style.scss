@@ -52,7 +52,7 @@ header {
                 border-radius: 2.27397px;
                 overflow: hidden;
             }
-    
+
             .google-review-card {
                 background: $secondary;
                 border-radius: 2.27397px;
@@ -78,10 +78,128 @@ header {
                     .icon {
                         position: absolute;
                         top: -38.5px;
-
                     }
                 }
             }
         }
     }
+}
+
+section.services {
+    background: imgUrl("service.png") center;
+    background-size: cover;
+    padding: 96px 0 117px;
+
+    .service-btn {
+        border-radius: 2.0363px;
+        background-color: $tertiary;
+        color: $white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding: 8px 16px;
+        text-align: center;
+        font-size: 1.018125rem; // 16.29px
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            background: rgba(255, 255, 255, 0.4);
+            bottom: 0;
+            right: 0;
+            outline: none;
+            transition: all 0.6s ease;
+        }
+
+        &:hover {
+            &::before {
+                mix-blend-mode: hard-light;
+                width: 30px;
+                color: $white;
+                border-radius: 50px;
+                height: 30px;
+                transform: scale(36.5);
+            }
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
+
+        &.active {
+            background-color: $primary;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            transition: 0.1s all;
+        }
+    }
+
+    
+    .accordion-container {
+        width: 100%;
+
+        .accordion-card {
+            margin: 35px 0;
+
+            .accordion-head {
+                background-color: $white;
+                color: $dark;
+                cursor: pointer;
+                font-weight: 600;
+                text-transform: capitalize;
+                padding: 1rem;
+                transition: 0.2s all;
+                font-size: 1.125rem;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+        
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.5rem; // 24px
+                    padding: 32px 23px;
+                }
+        
+                &.active {
+                    background-color: $secondary;
+                    color: $white;
+                }
+        
+                .main-question {
+                    @include media-breakpoint-down(sm) {
+                        max-width: 95%;
+                    }
+                }
+            }
+            
+            .accordion-body {
+                background: $dark;
+                color: $light;
+                display: none;
+                padding: 24px 1rem;
+                line-height: 2;
+                font-size: 1rem; // 16px
+        
+                @include media-breakpoint-up(md) {
+                    padding: 34px 24px;
+                }
+        
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+
 }

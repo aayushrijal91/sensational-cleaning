@@ -145,18 +145,30 @@ section.services {
         }
     }
 
-    
+    .service-note {
+        font-weight: 600;
+        color: $white;
+        font-size: 1.5rem; // 24px
+        padding-bottom: 24px;
+        display: none;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+        }
+    }
+
     .accordion-container {
         width: 100%;
+        display: none;
 
         .accordion-card {
-            margin: 35px 0;
+            margin: 22px 0;
 
             .accordion-head {
                 background-color: $white;
-                color: $dark;
+                color: $black;
                 cursor: pointer;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: capitalize;
                 padding: 1rem;
                 transition: 0.2s all;
@@ -164,42 +176,43 @@ section.services {
                 align-items: center;
                 display: flex;
                 justify-content: space-between;
-        
+
                 @include media-breakpoint-up(xl) {
                     font-size: 1.5rem; // 24px
                     padding: 32px 23px;
                 }
-        
+
                 &.active {
-                    background-color: $secondary;
-                    color: $white;
+                    background: rgba(255, 255, 255, 0.8);
                 }
-        
+
                 .main-question {
                     @include media-breakpoint-down(sm) {
                         max-width: 95%;
                     }
                 }
             }
-            
+
             .accordion-body {
-                background: $dark;
-                color: $light;
+                background: rgba(255, 255, 255, 0.9);
+                color: $black;
                 display: none;
                 padding: 24px 1rem;
                 line-height: 2;
                 font-size: 1rem; // 16px
-        
+
                 @include media-breakpoint-up(md) {
                     padding: 34px 24px;
                 }
-        
+
                 @include media-breakpoint-down(sm) {
                     font-size: 0.875rem;
                 }
             }
         }
+
+        &.active {
+            display: block;
+        }
     }
-
-
 }

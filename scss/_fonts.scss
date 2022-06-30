@@ -93,7 +93,7 @@ h7,
     font-size: 1.34rem; // 21.44px
 
     @include media-breakpoint-down(sm) {
-        font-size: 1rem;
+        font-size: 0.877rem;
     }
 }
 
@@ -191,6 +191,10 @@ h7,
 
 .h23 {
     font-size: 0.9375rem; // 15px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.6775rem;
+    }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");

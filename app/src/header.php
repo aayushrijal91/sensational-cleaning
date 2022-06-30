@@ -29,35 +29,39 @@
 				<div class="row no-gutters justify-content-center justify-content-lg-between align-items-center">
 					<div class="col-auto">
 						<div class="row no-gutters align-items-center">
-							<div class="col-auto pr-5">
+							<div class="col-auto pr-md-5 py-4 py-md-0">
 								<a href="./" class="btn p-0">
 									<?= renderImg("logo.png", "logo") ?> <span class="text-dark h9 font-raleway fw-700 pl-3">Sensational Water Damage Specialists</span>
 								</a>
 							</div>
-							<div class="col-auto px-5">
+							<div class="col-auto px-5 d-none d-md-block">
 								<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
 								<div class="h21 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="row justify-content-between no-gutters align-items-center">
-							<div class="col-4 px-1">
+							<div class="col-6 col-md-4 px-1">
 								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-black rounded-2 fw-600 h18">
 									$0 Call Out Fee
 								</a>
 							</div>
-							<div class="col-4 px-1">
+							<div class="col-6 col-md-4 px-1">
 								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-dark rounded-2 fw-900 h18">
 									<?= $phone_number ?>
 								</a>
 							</div>
-							<div class="col-4 px-1">
+							<div class="col-12 col-md-4 px-1 pt-2 pt-md-0">
 								<a href="#form" class="btn btn-block btn-primary rounded-2 fw-600 h18">
 									Book Online
 								</a>
 							</div>
 						</div>
+					</div>
+					<div class="col-12 px-5 d-md-none text-center pt-4">
+						<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
+						<div class="h23 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 					</div>
 				</div>
 			</div>

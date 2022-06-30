@@ -3,10 +3,14 @@
 }
 
 header {
-    background: imgUrl("header.jpg") center top;
+    @include media-breakpoint-up(md) {
+        background: imgUrl("header.jpg") center top;
+    }
 
     .header-top-bar {
-        padding: 16px 48px;
+        @include media-breakpoint-up(md){
+            padding: 16px 48px;
+        }
 
         .btn {
             height: 56px;

@@ -8,8 +8,9 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <div class="row no-gutters justify-content-end">
+                    <div class="col-12 d-md-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
                     <div class="col-lg-7">
-                        <div class="fw-800 text-black h1 line-height-1">Free* Carpet Dryer Hire</div>
+                        <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire</div>
                         <div class="horizontal-divider"></div>
                         <div class="fw-700 h7 line-height-3 py-4 text-black">
                             Sensational Water Damage Specialists can help with water damage restoration and repair. Whether your job is a big one or a small one, we pride ourselves in being able to complete any task quickly and professionally.
@@ -31,10 +32,10 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-10">
-                <div class="row no-gutters justify-content-between align-items-center pb-7 h14">
-                    <div class="col-auto text-white font-raleway fw-700 h4">See How Our Services Work</div>
-                    <div class="col-auto">
-                        <div class="bg-black text-white px-4 py-3 rounded-2">
+                <div class="row no-gutters justify-content-center justify-content-md-between align-items-center pb-7 h14">
+                    <div class="col-auto text-white font-raleway fw-700 h4 text-center">See How Our Services Work</div>
+                    <div class="col-11 col-md-auto pt-3">
+                        <div class="bg-black text-white px-4 py-3 rounded-2 text-center">
                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.01038 0.296387C3.61038 0.296387 0.010376 4.071 0.010376 8.68442C0.010376 13.2978 3.61038 17.0725 8.01038 17.0725C12.4104 17.0725 16.0104 13.2978 16.0104 8.68442C16.0104 4.071 12.4104 0.296387 8.01038 0.296387ZM8.01038 12.8784C7.41038 12.8784 7.01038 12.459 7.01038 11.8299C7.01038 11.2008 7.41038 10.7814 8.01038 10.7814C8.61038 10.7814 9.01038 11.2008 9.01038 11.8299C9.01038 12.459 8.61038 12.8784 8.01038 12.8784ZM9.01038 9.73293H7.01038V4.4904H9.01038V9.73293Z" fill="#DEAB0E" />
                             </svg>
@@ -42,27 +43,40 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-between align-items-center">
+                <div class="row justify-content-between align-items-center d-none d-md-flex">
                     <div class="col-auto">
                         <div class="text-white">Click Service:</div>
                     </div>
                     <div class="col">
-                        <div class="service-btn active" d-name="service-flood-restoration">Flood Restoration</div>
+                        <div class="service-btn active" id="service-flood-restoration-btn" d-name="service-flood-restoration">Flood Restoration</div>
                     </div>
                     <div class="col">
-                        <div class="service-btn" d-name="service-wet-carpet-drying">Wet Carpet Drying</div>
+                        <div class="service-btn" id="service-wet-carpet-drying-btn" d-name="service-wet-carpet-drying">Wet Carpet Drying</div>
                     </div>
                     <div class="col-auto">
-                        <div class="service-btn" d-name="service-water-damage-restoration">Water Damage Restoration</div>
+                        <div class="service-btn" id="service-water-damage-restoration-btn" d-name="service-water-damage-restoration">Water Damage Restoration</div>
                     </div>
                     <div class="col-auto">
-                        <div class="service-btn" d-name="service-sewerage-overflow">Sewerage Overflow Clean Up</div>
+                        <div class="service-btn" id="service-sewerage-overflow-btn" d-name="service-sewerage-overflow">Sewerage Overflow Clean Up</div>
                     </div>
                     <div class="col">
-                        <div class="service-btn" d-name="service-mould-remediation">Mould Remediation</div>
+                        <div class="service-btn" id="service-mould-remediation-btn" d-name="service-mould-remediation">Mould Remediation</div>
                     </div>
                 </div>
-                <hr class="bg-white my-6">
+                
+                <div class="row justify-content-between align-items-center d-md-none">
+                    <div class="col-auto text-white font-roboto fw-800">Choose: </div>
+                    <div class="col">
+                        <select class="service-btn-mobile form-control bg-primary border-0 text-white rounded-2">
+                            <option selected d-name="service-flood-restoration">Flood Restoration</option>
+                            <option d-name="service-wet-carpet-drying">Wet Carpet Drying</option>
+                            <option d-name="service-water-damage-restoration">Water Damage Restoration</option>
+                            <option d-name="service-sewerage-overflow">Sewerage Overflow Clean Up</option>
+                            <option d-name="service-mould-remediation">Mould Remediation</option>
+                        </select>
+                    </div>
+                </div>
+                <hr class="bg-white my-5 my-md-6">
                 <div class="service-note">
 
                 </div>
@@ -165,81 +179,81 @@ include __DIR__ . '/header.php';
                 <div class="accordion-container" id="service-sewerage-overflow">
                     <p class="text-white h8 fw-500">Wastewater contains 99.7 per cent water. However, the 0.3 per cent of dissolved and suspended matter can contain many microorganisms that may be harmful to humans, animals and the environment.</p>
                     <p class="text-white h8 fw-500">These can include:</p>
-                    <div class="row no-gutters text-white h10 fw-800 pt-4 pb-5">
-                        <div class="col-auto">
+                    <div class="row no-gutters text-white h10 fw-800 py-4 pb-md-5">
+                        <div class="col-md-auto">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Viruses</span>
+                            <span class="pl-2 pl-md-4">Viruses</span>
                         </div>
-                        <div class="col-auto pl-7">
+                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Bacteria</span>
+                            <span class="pl-2 pl-md-4">Bacteria</span>
                         </div>
-                        <div class="col-auto pl-7">
+                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Fungal</span>
+                            <span class="pl-2 pl-md-4">Fungal</span>
                         </div>
-                        <div class="col-auto pl-7">
+                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Parasitic Organisms</span>
+                            <span class="pl-2 pl-md-4">Parasitic Organisms</span>
                         </div>
                     </div>
                     <p class="text-white h8 fw-500">If you come into contact with wastewater or its products, you could end up being exposed to harmful microorganisms that can cause illnesses such as:</p>
-                    <div class="row no-gutters text-white h10 fw-800 pt-4 pb-5">
-                        <div class="col-auto">
+                    <div class="row no-gutters text-white h10 fw-800 py-4 pb-md-5">
+                        <div class="col-md-auto">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Gastroenteritis (Diarrhoea Or Vomiting)</span>
+                            <span class="pl-2 pl-md-4">Gastroenteritis (Diarrhoea Or Vomiting)</span>
                         </div>
-                        <div class="col-auto pl-7">
+                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Fungal</span>
+                            <span class="pl-2 pl-md-4">Fungal</span>
                         </div>
-                        <div class="col-auto pl-7">
+                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Parasitic Organisms</span>
+                            <span class="pl-2 pl-md-4">Parasitic Organisms</span>
                         </div>
-                        <div class="col-12 pt-4">
+                        <div class="col-12 pt-md-4">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-4">Giardiasis And Cryptosporidiosis (Severe Stomach Cramps, Diarrhoea or Vomiting)</span>
+                            <span class="pl-2 pl-md-4">Giardiasis And Cryptosporidiosis (Severe Stomach Cramps, Diarrhoea or Vomiting)</span>
                         </div>
                     </div>
                     <p class="text-white h8 fw-500">Here at Sensational water damage specialists, we have fully qualified and trained technicians to Effectively Remove, Extract, Treat and decontaminate effect areas by Sewage waste water.</p>
@@ -254,11 +268,12 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center">
             <div class="col-12 col-lg-11">
                 <div class="row no-gutters justify-content-between about-outer-wrapper align-items-center">
-                    <div class="col-auto">
-                        <?= renderImg("about.png", "background") ?>
+                    <div class="col-12 col-md-auto">
+                        <?= renderImg("about.png", "background", "d-none d-md-block") ?>
+                        <?= renderImg("about-sm.png", "background", "w-100 d-md-none") ?>
                     </div>
                     <div class="col about-wrapper">
-                        <div class="bg-black d-inline-block h16 fw-600 px-4 pt-2 pb-1 mb-2">With Over 20 Years in the Industry, we are the experts</div>
+                        <div class="bg-black text-center d-block d-md-inline-block h16 fw-600 px-4 pt-2 pb-1 mb-2">With Over 20 Years in the Industry, we are the experts</div>
                         <div class="h5 fw-700 py-4">Our technicians are trained to recognize when a carpet is too far gone, and if it is, we will let you know after our initial assessment</div>
                         <div class="text-grey fw-500 h10 pb-3">Should you want some convincing, please have a look at our testimonials page, where we have just a small portion of our satisfied customers.</div>
                         <div class="text-grey fw-500 h10">If you would like to obtain a quote or arrange a booking, please don’t hesitate to give us a call or you can use our contact us page and send us a message.</div>
@@ -273,21 +288,21 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <div class="row no-gutters justify-content-between align-items-center">
-                    <div class="col-auto">
+                <div class="row no-gutters justify-content-center justify-content-md-between align-items-center">
+                    <div class="col-md-auto py-4 py-md-0">
                         <div class="facebook-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
                                     <?= renderImg("review-fb.png", "icons") ?>
                                 </div>
                                 <div class="col text-white px-3">
-                                    <div class="text-uppercase h16 fw-700 line-height-1">5 star review rating</div>
+                                    <div class="text-uppercase fw-700 line-height-1">5 star review rating</div>
                                     <div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-md-auto py-4 py-md-0">
                         <div class="google-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -300,11 +315,11 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto py-4 py-md-0">
                         <?= renderImg("ria.png", "logo") ?>
                     </div>
-                    <div class="col-auto">
-                        <?= renderImg("rpc.png", "logo") ?>
+                    <div class="col-md-auto py-4 py-md-0">
+                        <?= renderImg("rpc.png", "logo", "w-100") ?>
                     </div>
                 </div>
             </div>
@@ -326,23 +341,23 @@ include __DIR__ . '/header.php';
                             <label class="fw-800" for="firstName">Your First Name</label>
                             <input id="firstName" class="form-control border-light-grey rounded-0 bg-white" type="text" placeholder="Eg: John" name="firstName" required>
                         </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
+                        <div class="col-12 col-md-6 pl-md-2 mt-4 mt-md-0">
                             <label class="fw-800" for="lastName">Your Surname</label>
                             <input id="lastName" class="form-control border-light-grey rounded-0 bg-white" type="text" placeholder="Eg: Doe" name="lastName" required>
                         </div>
-                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-4">
+                        <div class="col-12 col-md-6 pr-md-2 mt-4">
                             <label class="fw-800" for="phone">Your Phone Number</label>
                             <input id="phone" class="form-control rounded-0 border-light-grey bg-white" type="tel" placeholder="Eg: 0400 000 000" name="phone" required>
                         </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-4">
+                        <div class="col-12 col-md-6 pl-md-2 mt-4">
                             <label class="fw-800" for="email">Your Email Address</label>
                             <input id="email" class="form-control rounded-0 border-light-grey bg-white" type="email" placeholder="Eg: example@email.com.au" name="email" required>
                         </div>
-                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-4">
+                        <div class="col-12 col-md-6 pr-md-2 mt-4">
                             <label class="fw-800" for="address">Your Address</label>
                             <input id="address" class="form-control border-1 rounded-0 border-light-grey bg-white" type="text" placeholder="Enter street address here" name="address" required>
                         </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-4">
+                        <div class="col-12 col-md-6 pl-md-2 mt-4">
                             <label class="fw-800" for="postcode">Your City / Postcode</label>
                             <input id="postcode" class="form-control border-1 rounded-0 border-light-grey bg-white" type="text" placeholder="Eg: adelaide / 5000" name="postcode" required>
                         </div>

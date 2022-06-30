@@ -48,6 +48,30 @@ $(".service-btn").on('click', function (e) {
     }
 });
 
+$(".service-btn-mobile").on('change', function (e) {
+    e.preventDefault();
+    let id = $(".service-btn-mobile option:selected").attr('d-name');
+
+    $(".accordion-container").removeClass('active');
+    $(`#${id}`).addClass('active');
+
+    $(".service-btn").removeClass('active');
+    $(`#${id}-btn`).addClass('active');
+
+    if (id == 'service-wet-carpet-drying') {
+        $('.service-note').css('display', 'block');
+        $('.service-note').text('No matter the condition or cause, we offer wet carpet cleaning to bring your carpets back to their original condition. You can depend on our professional team of carpet cleaners to advise on the best service to clean your carpets most effectively.');
+    } else if (id == "service-water-damage-restoration") {
+        $('.service-note').css('display', 'block');
+        $('.service-note').text('Water Damage Specialist provides the professional water damage services you require 24/7. We use only the safest and effective products to get your carpets looking new and smelling fresh again.');
+    } else if (id == 'service-mould-remediation') {
+        $('.service-note').css('display', 'block');
+        $('.service-note').text('On Completion of the water extraction process we then apply our anti mould treatment to the flood affected areas to kill and prevent the growth of mould.');
+    } else {
+        $('.service-note').css('display', 'none');
+    }
+});
+
 $(".accordion-head").on('click', function () {
     $(".accordion-head").removeClass("active");
     $(this).addClass('active');

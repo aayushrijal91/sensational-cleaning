@@ -6,10 +6,10 @@ include __DIR__ . '/header.php';
 <section class="free-carpet-dryer-offer">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
+            <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-end">
                     <div class="col-12 d-md-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 col-xxl-7">
                         <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire</div>
                         <div class="horizontal-divider"></div>
                         <div class="fw-700 h7 line-height-3 py-4 text-black">
@@ -31,7 +31,7 @@ include __DIR__ . '/header.php';
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-xl-10">
+            <div class="col-12 col-xl-11 col-xxl-10">
                 <div class="row no-gutters justify-content-center justify-content-md-between align-items-center pb-7 h14">
                     <div class="col-auto text-white font-raleway fw-700 h4 text-center">See How Our Services Work</div>
                     <div class="col-11 col-md-auto pt-3">
@@ -287,7 +287,7 @@ include __DIR__ . '/header.php';
 <section class="brands">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
+            <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-center justify-content-md-between align-items-center">
                     <div class="col-md-auto py-4 py-md-0">
                         <div class="facebook-review-card">

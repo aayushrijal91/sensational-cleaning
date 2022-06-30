@@ -9,6 +9,10 @@ header {
 
     .header-top-bar {
         @include media-breakpoint-up(md) {
+            padding: 16px 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
             padding: 16px 48px;
         }
 
@@ -129,7 +133,11 @@ section.free-carpet-dryer-offer {
 
     @include media-breakpoint-up(md) {
         padding: 102px 0px 82px;
-        background: imgUrl("blower.png") 5% bottom;
+        background: imgUrl("blower.png") -5% bottom;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        background-position-x: 5%;
     }
 
     .horizontal-divider {

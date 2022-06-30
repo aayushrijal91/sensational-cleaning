@@ -34,7 +34,7 @@
 									<?= renderImg("logo.png", "logo") ?> <span class="text-dark h9 font-raleway fw-700 pl-3">Sensational Water Damage Specialists</span>
 								</a>
 							</div>
-							<div class="col-auto px-5 d-none d-md-block">
+							<div class="col-auto px-xxl-5 d-none d-md-block">
 								<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
 								<div class="h21 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 							</div>
@@ -69,7 +69,7 @@
 		<div class="banner">
 			<div class="container">
 				<div class="row justify-content-center justify-content-md-end">
-					<div class="col-11">
+					<div class="col-11 col-md-12 col-xxl-11">
 						<div class="row no-gutters justify-content-between align-items-center">
 							<div class="col-10 col-md-6 text-white font-raleway h2 fw-700 line-height-1">
 								Sensational Water Damage Specialists
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-12 col-lg-10">
+					<div class="col-12 col-lg-11 col-xxl-10">
 						<div class="row no-gutters cta">
 							<div class="col-12 col-md-4 py-3 py-md-0">
 								<div class="cta-card">

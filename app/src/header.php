@@ -34,13 +34,13 @@
 									<?= renderImg("logo.png", "logo") ?> <span class="text-dark h9 font-raleway fw-700 pl-3">Sensational Water Damage Specialists</span>
 								</a>
 							</div>
-							<div class="col-auto col-md col-lg-auto px-xxl-5 d-none d-md-block">
+							<div class="col-auto col-md col-lg-auto px-xxl-5 d-none d-md-block d-lg-none d-xl-block">
 								<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
 								<div class="h21 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 pt-md-4 pt-lg-0">
+					<div class="col-12 col-lg col-xl-4 pt-md-4 pt-lg-0">
 						<div class="row justify-content-between no-gutters align-items-center">
 							<div class="col-6 col-md-4 px-1">
 								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-black rounded-2 fw-600 h18">
@@ -59,7 +59,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 px-5 d-md-none text-center pt-4 pb-3">
+					<div class="col-12 px-5 d-md-none d-lg-block d-xl-none text-center pt-4 pb-3">
 						<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
 						<div class="h23 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 					</div>
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-12 col-lg-11 col-xxl-10">
+					<div class="col-12 col-xl-11 col-xxl-10">
 						<div class="row no-gutters cta">
 							<div class="col-12 col-md-4 py-3 py-md-0">
 								<div class="cta-card">

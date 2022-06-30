@@ -50,7 +50,7 @@ h4,
     font-size: 4.1325rem; // 66.12px
     margin-bottom: 0;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         font-size: 3.125rem;
     }
 }

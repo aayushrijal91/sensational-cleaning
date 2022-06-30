@@ -9,7 +9,7 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-end">
                     <div class="col-12 d-lg-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
-                    <div class="col-lg-6 col-xxl-7">
+                    <div class="col-xl-6 col-xxl-7">
                         <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire</div>
                         <div class="horizontal-divider"></div>
                         <div class="fw-700 h7 line-height-3 py-4 text-black">
@@ -44,10 +44,10 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
                 <div class="row justify-content-between align-items-center d-none d-lg-flex">
-                    <div class="col-auto">
+                    <div class="col-auto d-lg-none d-xl-block">
                         <div class="text-white">Click Service:</div>
                     </div>
-                    <div class="col">
+                    <div class="col-auto col-xl">
                         <div class="service-btn active" id="service-flood-restoration-btn" d-name="service-flood-restoration">Flood Restoration</div>
                     </div>
                     <div class="col">
@@ -269,7 +269,7 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-lg-11">
                 <div class="row no-gutters justify-content-between about-outer-wrapper align-items-center">
                     <div class="col-12 col-md-auto">
-                        <?= renderImg("about.png", "background", "d-none d-md-block") ?>
+                        <?= renderImg("about.png", "background", "d-none d-md-block d-lg-none d-xl-block") ?>
                         <?= renderImg("about-sm.png", "background", "w-100 d-md-none") ?>
                     </div>
                     <div class="col about-wrapper">
@@ -289,7 +289,7 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center">
             <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-center justify-content-md-between align-items-center">
-                    <div class="col-md-auto py-4 py-lg-0">
+                    <div class="col-md-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
                         <div class="facebook-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -302,7 +302,7 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-auto py-4 py-lg-0">
+                    <div class="col-md-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
                         <div class="google-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -315,10 +315,10 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto py-4 py-lg-0">
+                    <div class="col-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
                         <?= renderImg("ria.png", "logo") ?>
                     </div>
-                    <div class="col-md-auto py-4 py-lg-0">
+                    <div class="col-md-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
                         <?= renderImg("rpc.png", "logo", "w-100") ?>
                     </div>
                 </div>

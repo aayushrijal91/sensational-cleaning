@@ -1,8 +1,8 @@
 <footer>
 	<div class="container">
 		<hr class="bg-light">
-		<div class="row justify-content-center justify-content-lg-between align-items-center pt-3">
-			<div class="col-auto d-lg-none pb-4">
+		<div class="row justify-content-center justify-content-xl-between align-items-center pt-3">
+			<div class="col-auto col-lg-12 col-xl-auto text-center d-xl-none pb-4">
 				<?= renderImg("payment-options.png", "icons") ?>
 			</div>
 			<div class="col-auto">
@@ -11,10 +11,10 @@
 					<div class="col-auto">© <?= date('Y') ?> <span class="text-primary fw-900"><?= $site ?></span> All Rights Reserved</div>
 				</div>
 			</div>
-			<div class="col-auto d-none d-lg-block">
+			<div class="col-auto d-none d-xl-block">
 				<?= renderImg("payment-options.png", "icons") ?>
 			</div>
-			<div class="col-auto pt-4 pt-lg-0">
+			<div class="col-auto pt-4 pt-xl-0">
 				<div class="row no-gutters justify-content-center justify-content-lg-end align-items-center">
 					<div class="col-auto">Privacy Policy</div>
 					<div class="col-auto px-2 px-md-4 fw-800 text-primary">|</div>

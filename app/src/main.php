@@ -8,7 +8,7 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center">
             <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-end">
-                    <div class="col-12 d-md-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
+                    <div class="col-12 d-lg-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
                     <div class="col-lg-6 col-xxl-7">
                         <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire</div>
                         <div class="horizontal-divider"></div>
@@ -32,8 +32,8 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-11 col-xxl-10">
-                <div class="row no-gutters justify-content-center justify-content-md-between align-items-center pb-7 h14">
-                    <div class="col-auto text-white font-raleway fw-700 h4 text-center">See How Our Services Work</div>
+                <div class="row no-gutters justify-content-center justify-content-lg-between align-items-center pb-7 h14">
+                    <div class="col-auto col-md-12 col-lg-auto text-white font-raleway fw-700 h4 text-center">See How Our Services Work</div>
                     <div class="col-11 col-md-auto pt-3">
                         <div class="bg-black text-white px-4 py-3 rounded-2 text-center">
                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-between align-items-center d-none d-md-flex">
+                <div class="row justify-content-between align-items-center d-none d-lg-flex">
                     <div class="col-auto">
                         <div class="text-white">Click Service:</div>
                     </div>
@@ -64,7 +64,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
                 
-                <div class="row justify-content-between align-items-center d-md-none">
+                <div class="row justify-content-between align-items-center d-lg-none">
                     <div class="col-auto text-white font-roboto fw-800">Choose: </div>
                     <div class="col">
                         <select class="service-btn-mobile form-control bg-primary border-0 text-white rounded-2">
@@ -179,74 +179,74 @@ include __DIR__ . '/header.php';
                 <div class="accordion-container" id="service-sewerage-overflow">
                     <p class="text-white h8 fw-500">Wastewater contains 99.7 per cent water. However, the 0.3 per cent of dissolved and suspended matter can contain many microorganisms that may be harmful to humans, animals and the environment.</p>
                     <p class="text-white h8 fw-500">These can include:</p>
-                    <div class="row no-gutters text-white h10 fw-800 py-4 pb-md-5">
-                        <div class="col-md-auto">
+                    <div class="row justify-content-md-between justify-content-lg-start no-gutters text-white h10 fw-800 py-4 pb-md-5">
+                        <div class="col-md-auto py-md-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Viruses</span>
+                            <span class="pl-2 pl-lg-4">Viruses</span>
                         </div>
-                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
+                        <div class="col-md-auto pl-lg-7 py-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Bacteria</span>
+                            <span class="pl-2 pl-lg-4">Bacteria</span>
                         </div>
-                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
+                        <div class="col-md-auto pl-lg-7 py-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Fungal</span>
+                            <span class="pl-2 pl-lg-4">Fungal</span>
                         </div>
-                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
+                        <div class="col-md-auto pl-lg-7 py-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Parasitic Organisms</span>
+                            <span class="pl-2 pl-lg-4">Parasitic Organisms</span>
                         </div>
                     </div>
                     <p class="text-white h8 fw-500">If you come into contact with wastewater or its products, you could end up being exposed to harmful microorganisms that can cause illnesses such as:</p>
-                    <div class="row no-gutters text-white h10 fw-800 py-4 pb-md-5">
-                        <div class="col-md-auto">
+                    <div class="row no-gutters justify-content-md-between justify-content-lg-start text-white h10 fw-800 py-4 pb-md-5">
+                        <div class="col-md-auto py-md-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Gastroenteritis (Diarrhoea Or Vomiting)</span>
+                            <span class="pl-2 pl-lg-4">Gastroenteritis (Diarrhoea Or Vomiting)</span>
                         </div>
-                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
+                        <div class="col-md-auto pl-lg-7 py-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Fungal</span>
+                            <span class="pl-2 pl-lg-4">Fungal</span>
                         </div>
-                        <div class="col-md-auto pl-md-7 py-2 py-md-0">
+                        <div class="col-md-auto pl-lg-7 py-2 py-lg-0">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
                                     <path id="Icon_2" d="M17.0976 25.5571L12.2051 20.6938C12.0684 20.5571 12 20.3813 12 20.1665C12 19.9516 12.0684 19.7759 12.2051 19.6391L13.2891 18.5845C13.4258 18.4282 13.5967 18.3501 13.8018 18.3501C14.0068 18.3501 14.1875 18.4282 14.3437 18.5845L17.625 21.8657L24.6562 14.8345C24.8125 14.6782 24.9931 14.6001 25.1982 14.6001C25.4033 14.6001 25.5742 14.6782 25.7109 14.8345L26.7949 15.8892C26.9316 16.0259 27 16.2017 27 16.4165C27 16.6313 26.9316 16.8071 26.7949 16.9438L18.1523 25.5571C18.0156 25.7134 17.8398 25.7915 17.625 25.7915C17.4101 25.7915 17.2344 25.7134 17.0976 25.5571Z" fill="white" />
                                 </g>
                             </svg>
-                            <span class="pl-2 pl-md-4">Parasitic Organisms</span>
+                            <span class="pl-2 pl-lg-4">Parasitic Organisms</span>
                         </div>
-                        <div class="col-12 pt-md-4">
+                        <div class="col-12 pt-md-0 pt-lg-4">
                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Icon">
                                     <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 37.8208C29.4411 37.8208 37.5 29.7619 37.5 19.8208C37.5 9.87968 29.4411 1.8208 19.5 1.8208C9.55887 1.8208 1.5 9.87968 1.5 19.8208C1.5 29.7619 9.55887 37.8208 19.5 37.8208Z" stroke="white" stroke-width="1.5" />
@@ -289,7 +289,7 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center">
             <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-center justify-content-md-between align-items-center">
-                    <div class="col-md-auto py-4 py-md-0">
+                    <div class="col-md-auto py-4 py-lg-0">
                         <div class="facebook-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -302,7 +302,7 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-auto py-4 py-md-0">
+                    <div class="col-md-auto py-4 py-lg-0">
                         <div class="google-review-card">
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -315,10 +315,10 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto py-4 py-md-0">
+                    <div class="col-auto py-4 py-lg-0">
                         <?= renderImg("ria.png", "logo") ?>
                     </div>
-                    <div class="col-md-auto py-4 py-md-0">
+                    <div class="col-md-auto py-4 py-lg-0">
                         <?= renderImg("rpc.png", "logo", "w-100") ?>
                     </div>
                 </div>

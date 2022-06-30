@@ -28,19 +28,19 @@
 			<div class="container-fluid">
 				<div class="row no-gutters justify-content-center justify-content-lg-between align-items-center">
 					<div class="col-auto">
-						<div class="row no-gutters align-items-center">
-							<div class="col-auto pr-md-5 py-4 py-md-0">
+						<div class="row no-gutters align-items-center justify-content-md-between">
+							<div class="col-auto pr-md-4 pr-lg-5 py-4 py-md-0">
 								<a href="./" class="btn p-0">
 									<?= renderImg("logo.png", "logo") ?> <span class="text-dark h9 font-raleway fw-700 pl-3">Sensational Water Damage Specialists</span>
 								</a>
 							</div>
-							<div class="col-auto px-xxl-5 d-none d-md-block">
+							<div class="col-auto col-md col-lg-auto px-xxl-5 d-none d-md-block">
 								<div class="text-primary fw-900 h11 line-height-1">Same Day Service Guarantee</div>
 								<div class="h21 text-dark line-height-1">Service Fee Waived If Unable To Attend</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-lg-4 pt-md-4 pt-lg-0">
 						<div class="row justify-content-between no-gutters align-items-center">
 							<div class="col-6 col-md-4 px-1">
 								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-black rounded-2 fw-600 h18">
@@ -87,9 +87,9 @@
 							<div class="col-auto d-none d-md-block">
 								<a href="#form" class="btn btn-primary banner-book-btn">Book Online</a>
 							</div>
-							<div class="col-auto">
+							<div class="col-auto col-md-6 col-lg-auto">
 								<div class="row no-gutters">
-									<div class="col-md-auto px-2">
+									<div class="col-lg-auto px-2">
 										<div class="facebook-review-card">
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -102,7 +102,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-auto pt-4 pt-md-0 px-2">
+									<div class="col-lg-auto pt-4 pt-lg-0 px-2">
 										<div class="google-review-card">
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">

@@ -2,7 +2,7 @@
 	<div class="container">
 		<hr class="bg-light">
 		<div class="row justify-content-center justify-content-lg-between align-items-center pt-3">
-			<div class="col-auto d-md-none pb-4">
+			<div class="col-auto d-lg-none pb-4">
 				<?= renderImg("payment-options.png", "icons") ?>
 			</div>
 			<div class="col-auto">
@@ -11,15 +11,15 @@
 					<div class="col-auto">© <?= date('Y') ?> <span class="text-primary fw-900"><?= $site ?></span> All Rights Reserved</div>
 				</div>
 			</div>
-			<div class="col-auto d-none d-md-block">
+			<div class="col-auto d-none d-lg-block">
 				<?= renderImg("payment-options.png", "icons") ?>
 			</div>
-			<div class="col-auto">
+			<div class="col-auto pt-4 pt-lg-0">
 				<div class="row no-gutters justify-content-center justify-content-lg-end align-items-center">
 					<div class="col-auto">Privacy Policy</div>
 					<div class="col-auto px-2 px-md-4 fw-800 text-primary">|</div>
 					<div class="col-auto">Terms and Conditions</div>
-					<div class="col-12 col-md-auto pl-lg-5 text-center pt-4 pt-md-0">
+					<div class="col-12 col-md-auto pl-md-5 text-center pt-4 pt-md-0">
 						<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 							<?= renderImg("aiims1.png", "logo") ?>
 						</a>

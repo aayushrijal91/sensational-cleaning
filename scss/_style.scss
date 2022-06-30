@@ -216,3 +216,135 @@ section.services {
         }
     }
 }
+
+section.about {
+    padding: 107px 0;
+
+    .about-outer-wrapper {
+        background: $primary;
+    }
+
+    .about-wrapper {
+        padding: 55px 50px 45px 81px;
+        color: $white;
+    }
+}
+
+section.brands {
+    padding: 52px 0;
+
+    .facebook-review-card {
+        background: $facebook;
+        border-radius: 2.27397px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .google-review-card {
+        background: $secondary;
+        border-radius: 2.27397px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+section.form {
+    padding: 51px 0 122px;
+
+    .form-wrapper {
+        padding: 50px 16px 34.58px 16px;
+        box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.1);
+
+        @include media-breakpoint-up(md) {
+            padding: 40px 64px 61px;
+        }
+
+        .form_heroTitle {
+            font-weight: 800;
+            line-height: 1.06;
+            text-align: center;
+            padding-bottom: 63px;
+            font-size: 4.290625rem; // 68.65px
+            margin-bottom: 0;
+            color: $black;
+
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 30px;
+                font-size: 1.5rem;
+            }
+        }
+
+        form {
+            label {
+                font-size: 1.25rem;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+
+            input,
+            select {
+                color: $dark;
+                font-weight: 400;
+                min-height: 45px;
+                font-size: 12px;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 18px;
+                    min-height: 71px;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: $grey;
+                }
+
+                option {
+                    color: $dark;
+                }
+            }
+
+            select {
+                color: $tertiary;
+            }
+
+            button {
+                min-height: 68.54px;
+
+                @include media-breakpoint-up(md) {
+                    min-height: 61px;
+                }
+            }
+        }
+
+        .form_privacyInformation {
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: $grey;
+            line-height: 1;
+
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 20.89px;
+            }
+        }
+    }
+}
+
+footer {
+    padding-bottom: 76px;
+    letter-spacing: -0.5px;
+    font-size: 0.95rem;
+}

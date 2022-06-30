@@ -215,4 +215,132 @@ include __DIR__ . '/header.php';
         </div>
 </section>
 
+<section class="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-11">
+                <div class="row no-gutters justify-content-between about-outer-wrapper align-items-center">
+                    <div class="col-auto">
+                        <?= renderImg("about.png", "background") ?>
+                    </div>
+                    <div class="col about-wrapper">
+                        <div class="bg-black d-inline-block h16 fw-600 px-4 pt-2 pb-1 mb-2">With Over 20 Years in the Industry, we are the experts</div>
+                        <div class="h5 fw-700 py-4">Our technicians are trained to recognize when a carpet is too far gone, and if it is, we will let you know after our initial assessment</div>
+                        <div class="text-grey fw-500 h10 pb-3">Should you want some convincing, please have a look at our testimonials page, where we have just a small portion of our satisfied customers.</div>
+                        <div class="text-grey fw-500 h10">If you would like to obtain a quote or arrange a booking, please don’t hesitate to give us a call or you can use our contact us page and send us a message.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brands">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <div class="facebook-review-card">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <?= renderImg("review-fb.png", "icons") ?>
+                                </div>
+                                <div class="col text-white px-3">
+                                    <div class="text-uppercase h16 fw-700 line-height-1">5 star review rating</div>
+                                    <div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="google-review-card">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <?= renderImg("review-google.png", "icons") ?>
+                                </div>
+                                <div class="col text-white px-3">
+                                    <div class="text-uppercase h12 fw-700 line-height-1">Trusted Services</div>
+                                    <?= renderImg("5star.png", "icons", "pt-1") ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <?= renderImg("ria.png", "logo") ?>
+                    </div>
+                    <div class="col-auto">
+                        <?= renderImg("rpc.png", "logo") ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-11 form-wrapper">
+                <div class="form_heroTitle">
+                    Get 50% off Carpet Mould Treatment Services when you Book Online!
+                </div>
+                <form action="./src/form" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+                    <div class="row no-gutters pb-3">
+                        <div class="col-12 col-md-6 pr-md-2">
+                            <label class="fw-800" for="firstName">Your First Name</label>
+                            <input id="firstName" class="form-control border-light-grey rounded-0 bg-white" type="text" placeholder="Eg: John" name="firstName" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
+                            <label class="fw-800" for="lastName">Your Surname</label>
+                            <input id="lastName" class="form-control border-light-grey rounded-0 bg-white" type="text" placeholder="Eg: Doe" name="lastName" required>
+                        </div>
+                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-4">
+                            <label class="fw-800" for="phone">Your Phone Number</label>
+                            <input id="phone" class="form-control rounded-0 border-light-grey bg-white" type="tel" placeholder="Eg: 0400 000 000" name="phone" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-4">
+                            <label class="fw-800" for="email">Your Email Address</label>
+                            <input id="email" class="form-control rounded-0 border-light-grey bg-white" type="email" placeholder="Eg: example@email.com.au" name="email" required>
+                        </div>
+                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-4">
+                            <label class="fw-800" for="address">Your Address</label>
+                            <input id="address" class="form-control border-1 rounded-0 border-light-grey bg-white" type="text" placeholder="Enter street address here" name="address" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-4">
+                            <label class="fw-800" for="postcode">Your City / Postcode</label>
+                            <input id="postcode" class="form-control border-1 rounded-0 border-light-grey bg-white" type="text" placeholder="Eg: adelaide / 5000" name="postcode" required>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-between pt-4">
+                        <div class="col-12 col-md-7 col-lg-auto form_privacyInformation">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto pr-3">
+                                    <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5536 9.2807C13.5536 8.72124 13.3372 8.18469 12.9521 7.7891C12.567 7.3935 12.0446 7.17126 11.5 7.17126C10.9554 7.17126 10.433 7.3935 10.0479 7.7891C9.66279 8.18469 9.44643 8.72124 9.44643 9.2807V11.812H13.5536V9.2807Z" fill="#A0A0AB" />
+                                        <path d="M21.6282 1.71034L11.7711 0.0227839C11.5916 -0.00759462 11.4084 -0.00759462 11.2289 0.0227839L1.37179 1.71034C0.988478 1.77621 0.640314 1.97953 0.389157 2.28417C0.138 2.58881 0.000114093 2.97505 0 3.37426V15.1871C0 18.3201 1.2116 21.3247 3.36827 23.5401C5.52494 25.7554 8.45001 27 11.5 27C14.55 27 17.4751 25.7554 19.6317 23.5401C21.7884 21.3247 23 18.3201 23 15.1871V3.37426C22.9999 2.97505 22.862 2.58881 22.6108 2.28417C22.3597 1.97953 22.0115 1.77621 21.6282 1.71034ZM18.0714 18.5622C18.0714 19.0098 17.8983 19.439 17.5902 19.7555C17.2822 20.072 16.8643 20.2498 16.4286 20.2498H6.57143C6.13572 20.2498 5.71785 20.072 5.40975 19.7555C5.10166 19.439 4.92857 19.0098 4.92857 18.5622V13.4996C4.92857 13.052 5.10166 12.6228 5.40975 12.3063C5.71785 11.9898 6.13572 11.812 6.57143 11.812H6.98214V9.2807C6.98214 8.04989 7.45813 6.86949 8.30539 5.99918C9.15265 5.12886 10.3018 4.63993 11.5 4.63993C12.6982 4.63993 13.8473 5.12886 14.6946 5.99918C15.5419 6.86949 16.0179 8.04989 16.0179 9.2807V11.812H16.4286C16.8643 11.812 17.2822 11.9898 17.5902 12.3063C17.8983 12.6228 18.0714 13.052 18.0714 13.4996V18.5622Z" fill="#A0A0AB" />
+                                    </svg>
+
+                                </div>
+                                <div class="col">
+                                    <span class="fw-700">Your Privacy is
+                                        Our Priority</span><span class="px-3">|</span>Your information will remain private
+                                    &amp;
+                                    secure
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <button type="submit" class="btn btn-primary text-white form-control rounded-2 fw-800">
+                                Submit Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>

@@ -3,11 +3,45 @@ include __DIR__ . '/../functions.php';
 include __DIR__ . '/header.php';
 ?>
 
+<section class="free-carpet-dryer-offer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="row no-gutters justify-content-end">
+                    <div class="col-lg-7">
+                        <div class="fw-800 text-black h1 line-height-1">Free* Carpet Dryer Hire</div>
+                        <div class="horizontal-divider"></div>
+                        <div class="fw-700 h7 line-height-3 py-4 text-black">
+                            Sensational Water Damage Specialists can help with water damage restoration and repair. Whether your job is a big one or a small one, we pride ourselves in being able to complete any task quickly and professionally.
+                        </div>
+                        <div class="horizontal-divider"></div>
+                        <div class="font-roboto text-dark pt-5">
+                            <p>We employ skilled technicians to your home to repair carpet water damage in all areas of Sydney.</p>
+                            <p>Having been in business for quite a while now, we understand that if water damage is one thing, it is unpredictable. Your dishwasher, washing machine, sink pipe, roof gutter, or bath suddenly decide to catastrophically fail, leaving you with a massive clean-up job.</p>
+                            <div>Quite often a leak will appear in the middle of the night, possibly when no-one is awake, and is discovered by someone when getting a drink at 3:00 in the morning, and suddenly a normal night becomes not so normal.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-10">
-                <div class="text-white font-raleway fw-700 h4 pb-7">See How Our Services Work</div>
+                <div class="row no-gutters justify-content-between align-items-center pb-7 h14">
+                    <div class="col-auto text-white font-raleway fw-700 h4">See How Our Services Work</div>
+                    <div class="col-auto">
+                        <div class="bg-black text-white px-4 py-3 rounded-2">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.01038 0.296387C3.61038 0.296387 0.010376 4.071 0.010376 8.68442C0.010376 13.2978 3.61038 17.0725 8.01038 17.0725C12.4104 17.0725 16.0104 13.2978 16.0104 8.68442C16.0104 4.071 12.4104 0.296387 8.01038 0.296387ZM8.01038 12.8784C7.41038 12.8784 7.01038 12.459 7.01038 11.8299C7.01038 11.2008 7.41038 10.7814 8.01038 10.7814C8.61038 10.7814 9.01038 11.2008 9.01038 11.8299C9.01038 12.459 8.61038 12.8784 8.01038 12.8784ZM9.01038 9.73293H7.01038V4.4904H9.01038V9.73293Z" fill="#DEAB0E" />
+                            </svg>
+                            <span class="pl-3">We Provide 24-hour Service</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                         <div class="text-white">Click Service:</div>

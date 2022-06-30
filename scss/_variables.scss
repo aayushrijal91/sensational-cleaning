@@ -5,6 +5,7 @@ $dark: #3D3D3D;
 $light: #d3d3d3;
 $black: #000000;
 $grey: #A0A0Ab;
+$dark-grey: #636363;
 $white: #ffffff;
 $facebook: #3B5997;
 
@@ -16,6 +17,7 @@ $theme-colors: map-merge(
         "white": $white,
         "facebook": $facebook,
         "grey": $grey,
+        "dark-grey": $dark-grey,
     ),
     $theme-colors
 );

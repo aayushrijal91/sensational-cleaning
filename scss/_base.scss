@@ -58,6 +58,10 @@ body {
     font-style: italic;
 }
 
+.text-decoration-none {
+    text-decoration: none;
+}
+
 //line-height
 .line-height-1 {
     line-height: 1;
@@ -65,6 +69,10 @@ body {
 
 .line-height-2 {
     line-height: 2;
+}
+
+.line-height-3 {
+    line-height: 1.33;
 }
 
 .letter-spacing-05 {

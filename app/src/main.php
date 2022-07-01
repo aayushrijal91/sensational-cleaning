@@ -10,7 +10,7 @@ include __DIR__ . '/header.php';
                 <div class="row no-gutters justify-content-end">
                     <div class="col-12 d-lg-none pb-5"><?= renderImg("blower.png", "background", "w-100") ?></div>
                     <div class="col-xl-6 col-xxl-7">
-                        <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire</div>
+                        <div class="fw-800 text-black h1 line-height-1 pb-5">Free* Carpet Dryer Hire<span class="sm-text">*Conditions apply</span></div>
                         <div class="horizontal-divider"></div>
                         <div class="fw-700 h7 line-height-3 py-4 text-black">
                             Sensational Water Damage Specialists can help with water damage restoration and repair. Whether your job is a big one or a small one, we pride ourselves in being able to complete any task quickly and professionally.

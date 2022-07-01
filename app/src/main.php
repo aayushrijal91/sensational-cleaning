@@ -63,7 +63,7 @@ include __DIR__ . '/header.php';
                         <div class="service-btn" id="service-mould-remediation-btn" d-name="service-mould-remediation">Mould Remediation</div>
                     </div>
                 </div>
-                
+
                 <div class="row justify-content-between align-items-center d-lg-none">
                     <div class="col-auto text-white font-roboto fw-800">Choose: </div>
                     <div class="col">
@@ -290,30 +290,34 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-xxl-10">
                 <div class="row no-gutters justify-content-center justify-content-md-between align-items-center">
                     <div class="col-md-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
-                        <div class="facebook-review-card">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col-auto">
-                                    <?= renderImg("review-fb.png", "icons") ?>
-                                </div>
-                                <div class="col text-white px-3">
-                                    <div class="text-uppercase fw-700 line-height-1">5 star review rating</div>
-                                    <div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
+                        <a href="https://www.facebook.com/sensationalcleaning.com.au/?ref=page_internal" target="_blank" class="text-decoration-none">
+                            <div class="facebook-review-card">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <?= renderImg("review-fb.png", "icons") ?>
+                                    </div>
+                                    <div class="col text-white px-3">
+                                        <div class="text-uppercase fw-700 line-height-1">5 star review rating</div>
+                                        <div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
-                        <div class="google-review-card">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col-auto">
-                                    <?= renderImg("review-google.png", "icons") ?>
-                                </div>
-                                <div class="col text-white px-3">
-                                    <div class="text-uppercase h12 fw-700 line-height-1">Trusted Services</div>
-                                    <?= renderImg("5star.png", "icons", "pt-1") ?>
+                        <a href="https://goo.gl/maps/7nRgBcR5pDJ4stNW9" target="_blank" class="text-decoration-none">
+                            <div class="google-review-card">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <?= renderImg("review-google.png", "icons") ?>
+                                    </div>
+                                    <div class="col text-white px-3">
+                                        <div class="text-uppercase h12 fw-700 line-height-1">Trusted Services</div>
+                                        <?= renderImg("5star.png", "icons", "pt-1") ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-auto col-lg-6 col-xl-auto py-4 py-xl-0 px-lg-4 px-xl-0">
                         <?= renderImg("ria.png", "logo") ?>

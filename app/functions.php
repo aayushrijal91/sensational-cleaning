@@ -2,9 +2,9 @@
 include __DIR__ . '/env.php';
 
 $site = "Sensational Water Damage Specialists";
-$phone_number = "02 9807 4905";
+$phone_number = "1300 174 902";
 $admin_email = 'arijal@aiims.com.au';
-$bcc_email = "";
+// $bcc_email = "";
 $no_reply_email = 'no-reply@sensational.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;

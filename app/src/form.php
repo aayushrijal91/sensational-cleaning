@@ -17,22 +17,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
+        $address = $_POST['address'];
+        $postcode = $_POST['postcode'];
 
         $message = '<!DOCTYPE html><html><body>' .
-            'Name: <strong>' . strip_tags($name) . '</strong><br>' .
+            'Name: <strong>' . strip_tags($firstName) . " " . strip_tags($lastName) . '</strong><br>' .
             'Phone: <strong>' . strip_tags($phone) . '</strong><br>' .
             'Email Address: <strong>' . strip_tags($email) . '</strong><br>' .
-            'Message: <strong>' . strip_tags($message) . '</strong><br>';
+            'Address: <strong>' . strip_tags($address) . '</strong><br>'.
+            'Postcode: <strong>' . strip_tags($postcode) . '</strong>';
 
         $headers = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
-            "From: " . $site . " <". $no_reply_email . ">" . "\r\n" .
+            "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
             // "Bcc: " . $bcc_email . "\r\n" .
-            "Reply-To: " . $site . " <". $no_reply_email . ">" . "\r\n" .
+            "Reply-To: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);
 

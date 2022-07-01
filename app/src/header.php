@@ -11,7 +11,7 @@
 
 	<!-- Recaptcha Here -->
 	<script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
-	<!-- <script>
+	<script>
 		grecaptcha.ready(function() {
 			grecaptcha.execute('<?= $recaptcha_client_secret ?>', {
 				action: 'contact'
@@ -19,10 +19,32 @@
 				document.getElementById('recaptchaResponse').value = token;
 			});
 		});
-	</script> -->
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5D5LMK7');
+	</script>
+	<!-- End Google Tag Manager -->
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D5LMK7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
 	<header>
 		<div class="header-top-bar">
 			<div class="container-fluid">
@@ -79,7 +101,7 @@
 								<div class="carpet-hire-claim-card">
 									<div class="text-white text-uppercase h22 fw-600 bg-primary d-inline-block line-height-1 pt-2 pb-1 px-2">Free</div>
 									<div class="text-white h6 fw-800 line-height-1 pt-3 pb-3">Free Carpet<br> Dryer Hire</div>
-									<a href="" class="p-0 btn text-secondary text-uppercase font-raleway fw-900 h20 letter-spacing-05">Claim Today <span class="pl-3">></span></a>
+									<a href="#form" class="p-0 text-secondary text-uppercase font-raleway fw-900 h20 letter-spacing-05 text-decoration-none">Claim Today <span class="pl-3">></span></a>
 								</div>
 							</div>
 						</div>
@@ -90,30 +112,34 @@
 							<div class="col-auto col-md-6 col-lg-auto">
 								<div class="row no-gutters">
 									<div class="col-lg-auto px-2">
-										<div class="facebook-review-card">
-											<div class="row no-gutters align-items-center">
-												<div class="col-auto">
-													<?= renderImg("review-fb.png", "icons") ?>
-												</div>
-												<div class="col text-white px-3">
-													<div class="text-uppercase fw-700 line-height-1">5 star review rating</div>
-													<div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
+										<a href="https://www.facebook.com/sensationalcleaning.com.au/?ref=page_internal" target="_blank" class="text-decoration-none">
+											<div class="facebook-review-card">
+												<div class="row no-gutters align-items-center">
+													<div class="col-auto">
+														<?= renderImg("review-fb.png", "icons") ?>
+													</div>
+													<div class="col text-white px-3">
+														<div class="text-uppercase fw-700 line-height-1">5 star review rating</div>
+														<div class="h19 d-flex align-items-center line-height-1 pt-2">Over 166 <?= renderImg("5star-sm.svg", "icons", "pl-3") ?></div>
+													</div>
 												</div>
 											</div>
-										</div>
+										</a>
 									</div>
 									<div class="col-lg-auto pt-4 pt-lg-0 px-2">
-										<div class="google-review-card">
-											<div class="row no-gutters align-items-center">
-												<div class="col-auto">
-													<?= renderImg("review-google.png", "icons") ?>
-												</div>
-												<div class="col text-white px-3">
-													<div class="text-uppercase h12 fw-700 line-height-1">Trusted Services</div>
-													<?= renderImg("5star.png", "icons", "pt-1") ?>
+										<a href="https://goo.gl/maps/7nRgBcR5pDJ4stNW9" target="_blank" class="text-decoration-none">
+											<div class="google-review-card">
+												<div class="row no-gutters align-items-center">
+													<div class="col-auto">
+														<?= renderImg("review-google.png", "icons") ?>
+													</div>
+													<div class="col text-white px-3">
+														<div class="text-uppercase h12 fw-700 line-height-1">Trusted Services</div>
+														<?= renderImg("5star.png", "icons", "pt-1") ?>
+													</div>
 												</div>
 											</div>
-										</div>
+										</a>
 									</div>
 								</div>
 							</div>
